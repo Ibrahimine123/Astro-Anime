@@ -1,0 +1,124 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ibrahim Khan and Hamza Rashid" />
+    <meta name="description" content="Anime Parardise" />
+    <title>{title}</title>
+  </head>
+</html>
+
+<body>
+  <Navbar />
+  <slot />
+  <Footer />
+</body>
+
+<style is:global>
+  :root {
+    --primary-bg-color: #121212; /* Dark background color */
+    --primary-text-color: #fff; /* Text color */
+    --nav-bg-color: #333; /* Navbar background color */
+    --nav-link-color: #fff; /* Navbar link color */
+    --nav-link-hover-color: #00b2f8; /* Navbar link hover color */
+    --nav-underline-color: #00b7ff; /* Navbar link underline color */
+    --content-bg-color: #f7f7f7; /* Content background color */
+    --content-text-color: #333; /* Content text color */
+    --content-border-color: #ccc; /* Content border color */
+    --content-box-shadow: rgba(0, 0, 0, 0.1); /* Content box shadow */
+    --footer-bg-color: #333; /* Footer background color */
+    --footer-text-color: #fff; /* Footer text color */
+    --footer-hover-color: #00b2f8; /* Footer text hover color */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 20px;
+    font-family: "AnimeFont", sans-serif;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 15px;
+    position: relative;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    font-weight: bold;
+    transition:
+      color 0.3s,
+      transform 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--nav-link-hover-color);
+    transform: translateY(-5px);
+  }
+
+  nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: var(--nav-underline-color);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: center top;
+  }
+
+  nav a:hover::before {
+    height: 3px;
+    transform: scaleX(1);
+  }
+  footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+  }
+
+  footer span {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  footer span:hover {
+    color: var(--footer-hover-color);
+  }
+</style>
