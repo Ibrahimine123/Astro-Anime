@@ -121,4 +121,13 @@ import Footer from "../components/Footer.astro";
   footer span:hover {
     color: var(--footer-hover-color);
   }
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav li {
+        margin: 10px 0; 
+    }
+  }
 </style>

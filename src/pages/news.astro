@@ -1,3 +1,134 @@
 ---
-import Layout from "../Layout/Layout.astro"
+import Layout from "../layout/Layout.astro";
+import Bleach from "../images/bleach.jpg"
+import { Image } from "astro:assets";
+import Monkey from "../images/Money D luufy.jpg"
+import naruto from "../images/naruto.jpg"
 ---
+
+<Layout title="News And Update Of Anime Reviews - infinite Programmer">
+    <section id="news">
+        <div class="news-item">
+            <h2>Bleach: Thousand-Year Blood War Part 3 Confirmed For 2024</h2>
+            <Image src={Bleach} alt="Bleach"/>
+            <p style="text-align: center;">The anime's second instalment ended recently and brought “The Separation” to a close.</p>
+            <p class="read-more-paragraph">Read More...</p>
+            <div class="more-content">
+                <p>In it, the Wandenreich, led by the malicious Yhwach, took their plans to the next level to take out the Soul Society and unleash unspeakable things on all the realms, both living and dead. While the second part ended on a cliffhanger, the team also released a teaser trailer for part 3 and stated it would arrive next year.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <h2>Shueisha's War On Manga Piracy Cracks Down On Its Own Official Translator</h2>
+            <Image src={Monkey} alt="Monkey D Luffy"/>
+            <p>Official manga translator for VIZ Media, Lightning, has ceased most social media activities after persistent...</p>
+            <p class="read-more-paragraph">Read More...</p>
+            <div class="more-content">
+                <p>Copyright strikes from Shueisha, the Japanese publisher and media conglomerate. Lightning provides English localizations for VIZ Media, which is jointly owned by Shueisha and Shogakukan. Under Shueisha's imprints are many well-known manga, including One Piece, Jujutsu Kaisen, Blue Exorcist, and Oshi no Ko, with many more scheduled for upcoming anime adaptations, like Mission: Yozakura Family and Kimi ni Todoke's third season. Lightning primarily translates and provides notes on '2023's breakout hit', Nue's Exorcist, while also using their social media platform to provide interview translations of famous mangaka and supplementary notes on Chainsaw Man and Jujutsu Kaisen. After numerous copyright strikes by Shueisha, with nearly all of their recent media removed, Lightning announced a frustrated decision to fans last week via X (formerly Twitter).</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <h2>Naruto manga confirms Jiraiya has always been flawed in the anime</h2>
+            <Image src={naruto} alt="Naruto"/>
+            <p>Shippuden anime, seemingly Studio Pierrot made a huge error while animating him. From his very first appearance in the anime.</p>
+            <p class="read-more-paragraph">Read More...</p>
+            <div class="more-content">
+                <p>However, that's not the truth. Jiraiya was one of the three Legendary Sannins who fought the great Hanzo of the Salamander and survived. A prophecy stated that he was meant to train the savior of the world. During his time, he was a master to two bright pupils, Nagato and Naruto. As fate would have it, Naruto defeated Nagato and became his village's savior. Soon after which, he saved all Shinobi.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const readMoreParagraphs = document.querySelectorAll(".read-more-paragraph");
+    
+            readMoreParagraphs.forEach(function (paragraph) {
+                paragraph.addEventListener("click", function () {
+                    const newsItem = paragraph.closest(".news-item");
+                    if (newsItem) {
+                        const moreContent = newsItem.querySelector(".more-content");
+                        if (moreContent) {
+                            if (newsItem.classList.contains("open")) {
+                                newsItem.classList.remove("open");
+                                (moreContent as HTMLElement).style.maxHeight = "0";
+                                paragraph.textContent = "Read More...";
+                            } else {
+                                newsItem.classList.add("open");
+                                (moreContent as HTMLElement).style.maxHeight = (moreContent as HTMLElement).scrollHeight + "px";
+                                paragraph.textContent = "Read Less";
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    
+</Layout>
+<style is:global>
+    #news {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news-item {
+    max-width: 400px;
+    background-color: #333;
+    border: 1px solid #111;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.news-item h2 {
+    font-size: 24px;
+    color: #00b2f8;
+    /* Blue shade */
+}
+.news-item img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 5px;
+    margin: 0 auto; 
+    display: block; 
+    transition: transform 0.3s;
+}
+
+.news-item img:hover {
+    transform: scale(1.05);
+}
+
+.news-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+.read-more-paragraph {
+    color: #1e98c9;
+    cursor: pointer;
+}
+
+.read-more-paragraph:hover {
+    color: #00b2f8;
+}
+
+.more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    color: #fff;
+}
+
+.news-item.open .more-content {
+    max-height: 1000px;
+}
+</style>
