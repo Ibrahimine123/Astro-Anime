@@ -1,15 +1,15 @@
 ---
 import Layout from "../layout/Layout.astro";
 import naruto from "../images/Naruto Profile.jpg";
-import Monkey from "../Images/Money D luufy.jpg";
-import Bleach from "../Images/kurosaki.jpg";
-import kenKaneki from "../Images/ken-kaneki.jpg";
-import jujutsu from "../Images/juju.jpg";
-import Eren from "../Images/eren yeager.jpg";
-import Demon from "../Images/demon slayer.jpg";
-import Yagami from "../Images/yagami.jpg";
-import Hang from "../Images/hanagaki.jpg"
-import thor from "../Images/thorfinn.jpg"
+import Monkey from "../images/Money D luufy.jpg";
+import Bleach from "../images/kurosaki.jpg";
+import kenKaneki from "../images/ken-kaneki.jpg";
+import jujutsu from "../images/juju.jpg";
+import Eren from "../images/eren yeager.jpg";
+import Demon from "../images/demon slayer.jpg";
+import Yagami from "../images/yagami.jpg";
+import Hang from "../images/hanagaki.jpg"
+import thor from "../images/thorfinn.jpg"
 import { Image } from "astro:assets";
 ---
 <Layout title="Anime Reviews - Infinite Programmer">
@@ -260,5 +260,23 @@ import { Image } from "astro:assets";
 .score {
     color: #000;
     font-weight: bold;
+}
+@media (max-width: 768px) {
+    .anime-review-content img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .anime-review-content h2 {
+        font-size: 20px;
+    }
+
+    .anime-review-content h3 {
+        font-size: 18px;
+    }
+
+    .rating {
+        font-size: 20px;
+    }
 }
 </style>
