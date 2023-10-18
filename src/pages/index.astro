@@ -1,108 +1,100 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layout/Layout.astro";
-import Onepiece from "../Images/onepiece.jpg";
-import Naruto from "../Images/naruto.jpg";
+import Onepiece from "../images/onepiece.jpg";
+import Naruto from "../images/naruto.jpg";
 ---
 
 <Layout title="Welcome To Anime Paradise - Infinite Programmer">
-    <section id="home">
-        <div class="welcome-message">
-            <p>
-                Welcome to Anime Paradise, your ultimate source for all things
-                anime. Dive into the enchanting world of anime with our
-                handpicked recommendations, in-depth reviews, and the latest
-                updates. Discover your next favourite series and explore the
-                magic of animation and storytelling.
-            </p>
-        </div>
-        <div class="anime-recommendations" id="anime-recommendations">
-            <div class="anime">
-                <a href="animereview.html#one-P">
-                    <Image
-                        src={Onepiece}
-                        alt="One Piece"
-                    />
-                    <h3>One Piece</h3>
-                    <p style="margin-bottom: 3.4rem;">
-                        Hey Let's Read About One Piece!
-                    </p>
-                </a>
-            </div>
-            <div class="anime">
-                <a href="animereview.html">
-                    <Image
-                        src={Naruto}
-                        alt="Naruto"
-                    />
-                    <h3>Naruto</h3>
-                    <p>
-                        Wanna Read About Naruto? You are in the Right Place to
-                        Read The Anime Review
-                    </p>
-                </a>
-            </div>
-        </div>
-    </section>
+  <section id="home">
+    <div class="welcome-message">
+      <p>
+        Welcome to Anime Paradise, your ultimate source for all things anime.
+        Dive into the enchanting world of anime with our handpicked
+        recommendations, in-depth reviews, and the latest updates. Discover your
+        next favourite series and explore the magic of animation and
+        storytelling.
+      </p>
+    </div>
+    <div class="anime-recommendations" id="anime-recommendations">
+      <div class="anime">
+        <a href="animereview.html#one-P">
+          <Image src={Onepiece} alt="One Piece" />
+          <h3>One Piece</h3>
+          <p style="margin-bottom: 3.4rem;">Hey Let's Read About One Piece!</p>
+        </a>
+      </div>
+      <div class="anime">
+        <a href="animereview.html">
+          <Image src={Naruto} alt="Naruto" />
+          <h3>Naruto</h3>
+          <p>
+            Wanna Read About Naruto? You are in the Right Place to Read The
+            Anime Review
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
-p {
-	padding: 20px;
-	font-size: 18px;
-	line-height: 1.6;
-	text-align: center;
-	color: #ccc;
-	background-color: #333; 
-	border: 2px solid var(--content-border-color);
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px var(--content-box-shadow);
-}
+  p {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #ccc;
+    background-color: #333;
+    border: 2px solid var(--content-border-color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--content-box-shadow);
+  }
 
-h1 {
-	font-family: 'AnimeFont', sans-serif;
-	font-size: 36px;
-	margin: 0;
-}
+  h1 {
+    font-family: "AnimeFont", sans-serif;
+    font-size: 36px;
+    margin: 0;
+  }
 
-.welcome-message {
+  .welcome-message {
     text-align: center;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-}
+  }
 
-.latest-updates {
+  .latest-updates {
     margin-bottom: 20px;
     text-align: center;
-}
+  }
 
-.post {
+  .post {
     margin-bottom: 20px;
     text-align: center;
-}
+  }
 
-.post h2 a {
+  .post h2 a {
     color: var(--primary-text-color);
     text-decoration: none;
     transition: color 0.3s;
-}
+  }
 
-.post h2 a:hover {
+  .post h2 a:hover {
     color: #ff9900;
-}
+  }
 
-.anime-recommendations {
+  .anime-recommendations {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-}
+  }
 
-.anime {
+  .anime {
     flex: 1;
     max-width: calc(33.333% - 20px);
-    background-color: var(--nav-bg-color); 
+    background-color: var(--nav-bg-color);
     border: 1px solid #444;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -110,46 +102,29 @@ h1 {
     text-align: center;
     transition: transform 0.3s;
     margin-bottom: 40px;
-}
+  }
 
-.anime a {
-  text-decoration: none;
-}
+  .anime a {
+    text-decoration: none;
+  }
 
-.anime:hover {
+  .anime:hover {
     transform: translateY(-5px);
-}
+  }
 
-.anime img {
+  .anime img {
     max-width: 100%;
     border-radius: 5px;
-}
+  }
 
-.anime h3 {
+  .anime h3 {
     font-size: 18px;
     margin: 10px 0;
     color: #00b2f8;
-}
+  }
 
-.anime p {
+  .anime p {
     font-size: 14px;
     color: #00b2f8;
-}
-@media (max-width: 768px) {
-    .anime-recommendations {
-        flex-direction: column; 
-    }
-
-    .anime {
-        max-width: 100%; 
-    }
-
-    .anime img {
-        width: 100%; 
-    }
-
-    .anime h3 {
-        font-size: 16px; 
-    }
 }
 </style>
