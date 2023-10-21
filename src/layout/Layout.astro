@@ -43,11 +43,14 @@ import Footer from "../components/Footer.astro";
   }
 
   body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
     font-family: Arial, sans-serif;
+    min-height: 100vh;
   }
 
   header {
@@ -102,6 +105,7 @@ import Footer from "../components/Footer.astro";
     transform: scaleX(1);
   }
   footer {
+    margin-top: auto;
     background-color: var(--footer-bg-color);
     color: var(--footer-text-color);
     padding: 10px;
