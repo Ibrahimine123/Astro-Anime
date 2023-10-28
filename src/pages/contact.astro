@@ -1,13 +1,13 @@
 ---
-import Layout from "../layout/Layout.astro";
-import letterH from "../images/letter-H.png";
+import { Image } from "astro:assets";
+import github from "../images/GitHub-Mark.png";
+import hamza from "../images/hamza12700.jpg";
+import ibrahim from "../images/ibrahim.png";
 import codeIcon from "../images/icon-code.jpg";
 import instagram from "../images/instagram-icon.png";
-import github from "../images/Github-Mark.png";
+import letterH from "../images/letter-H.png";
 import twitter from "../images/twitter.png";
-import hamza from "../images/Hamza12700.jpg";
-import ibrahim from "../images/ibrahim.png";
-import { Image } from "astro:assets";
+import Layout from "../layout/Layout.astro";
 ---
 
 <Layout title="Contact Anime Paradise Members">
@@ -23,7 +23,10 @@ import { Image } from "astro:assets";
           <a href="https://ibrahim-amv.pages.dev" target="_blank">
             <Image src={codeIcon} alt="Ibrahim's Website" />
           </a>
-          <a href="https://instagram.com/infinite_programmer786" target="_blank">
+          <a
+            href="https://instagram.com/infinite_programmer786"
+            target="_blank"
+          >
             <Image src={instagram} alt="Instagram" />
           </a>
         </div>
@@ -49,99 +52,99 @@ import { Image } from "astro:assets";
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </Layout>
 
 <style>
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  background-color: #191d2b; /* Background color for the whole container */
-  color: #fff;
-  padding: 20px;
-}
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191d2b; /* Background color for the whole container */
+    color: #fff;
+    padding: 20px;
+  }
 
-.contact-card {
-  display: flex;
-  background-color: #191d2b; /* Background color for the entire card */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 450px; /* Increased width of the cards */
-  text-align: left;
-}
+  .contact-card {
+    display: flex;
+    background-color: #191d2b; /* Background color for the entire card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 450px; /* Increased width of the cards */
+    text-align: left;
+  }
 
-.contact-image {
-  width: 120px;
-  height: 120px;
-  background-color: #191d2b; /* Background color for the circular image container */
-  border-radius: 50%;
-  display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  margin-right: 20px;
-}
+  .contact-image {
+    width: 120px;
+    height: 120px;
+    background-color: #191d2b; /* Background color for the circular image container */
+    border-radius: 50%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin-right: 20px;
+  }
 
-.contact-image img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+  .contact-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 
-.contact-details {
-  flex-grow: 1;
-  padding: 20px;
-  text-align: left;
-  background-color: #191d2b; /* Background color for the details container */
-}
+  .contact-details {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: left;
+    background-color: #191d2b; /* Background color for the details container */
+  }
 
-.contact-details h2 {
-  font-size: 24px;
-  margin: 0;
-}
+  .contact-details h2 {
+    font-size: 24px;
+    margin: 0;
+  }
 
-.contact-details p {
-  font-size: 16px;
-  color: #ccc;
-  margin: 0 0 20px;
-}
+  .contact-details p {
+    font-size: 16px;
+    color: #ccc;
+    margin: 0 0 20px;
+  }
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
-}
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.social-links a {
-  text-decoration: none;
-}
+  .social-links a {
+    text-decoration: none;
+  }
 
-.social-links img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #00b7ff;
-  padding: 5px;
-  transition: transform 0.3s;
-}
+  .social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00b7ff;
+    padding: 5px;
+    transition: transform 0.3s;
+  }
 
-.social-links img:hover {
-  transform: scale(1.2);
-}
+  .social-links img:hover {
+    transform: scale(1.2);
+  }
 
-.contact-links a {
+  .contact-links a {
     text-decoration: none;
     color: #00b2f8;
     font-weight: bold;
-    margin: 10px 0; 
+    margin: 10px 0;
     display: block;
     transition: color 0.3s;
-}
+  }
 
-.contact-links a:hover {
+  .contact-links a:hover {
     color: #1e98c9;
-}
+  }
 
-#h-website {
-  padding: 0;
-  width: 4rem;
-}
+  #h-website {
+    padding: 0;
+    width: 4rem;
+  }
 </style>
