@@ -1,4 +1,4 @@
-<!-- ---
+---
 import Layout from "../layout/Layout.astro";
 import letterH from "../images/letter-H.png";
 import codeIcon from "../images/icon-code.jpg";
@@ -7,136 +7,125 @@ import github from "../images/Github-Mark.png";
 import twitter from "../images/twitter.png";
 import hamza from "../images/Hamza12700.jpg";
 import ibrahim from "../images/ibrahim.png";
-import {Image} from "astro:assets";
+import { Image } from "astro:assets";
 ---
 
-<Layout title="Contact">
-  <section id="contact">
-    <div class="team-member">
-      <div class="circle-image">
-        <Image src={hamza} alt="Team Member 1">
+<Layout title="Contact Anime Paradise Members">
+  <div class="contact-container">
+    <div class="contact-card">
+      <div class="contact-image">
+        <Image src={ibrahim} alt="Profile Image" />
       </div>
-      <div class="member-details">
+      <div class="contact-details">
+        <h2>Infinite Programmer</h2>
+        <p>Frontend Web Developer</p>
+        <div class="social-links">
+          <a href="https://ibrahim-amv.pages.dev" target="_blank">
+            <Image src={codeIcon} alt="Ibrahim's Website" />
+          </a>
+          <a href="https://instagram.com/infinite_programmer786" target="_blank">
+            <Image src={instagram} alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-image">
+        <Image src={hamza} alt="Profile Image" />
+      </div>
+      <div class="contact-details">
         <h2>Hamza Rashid</h2>
+        <p>Frontend Web Developer</p>
         <div class="social-links">
-          <a href="https://github.com/hamza12700" target="_blank"><Image src={github} alt="Github"></a>          ttps://x.com/Hamza_Rash1d" target="_blank"><img src=".Im
-            ageages/{twiiter}ter" ref="https://hamza127.netlify.app/" t /a
-            Personal Websiterget="_blank"><Image id="h-website"
-              src={letterH} alt="Portfolio Website"></a>
+          <a href="https://hamza127.netlify.app/" target="_blank">
+            <Image src={letterH} alt="Hamza's Website" />
+          </a>
+          <a href="https://x.com/Hamza_Rash1d" target="_blank">
+            <Image src={twitter} alt="Twitter" />
+          </a>
+          <a href="https://github.com/hamza12700" target="_blank">
+            <Image src={github} alt="GitHub" />
+          </a>
         </div>
       </div>
     </div>
-
-    <div class="team-member">
-      <div class="circle-image">
-        <Image src={ibrahim} alt="Team Member 3">
-      </div>
-      <div class="member-details">
-        <h2>Ibrahim Khan</h2>
-        <div class="social-links">
-          <a href="https://instagram.com/infiniteprogrammer786" target="_blank"><Image src={instagram}
-              alt="Instagram"></a>
-          <a href="https://ibrahim-amv.pages.dev/" target="_blank"><Image src={codeIcon}
-              alt="Portfolio"></a>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>  
 </Layout>
 
 <style>
-  #contact {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #191d2b; /* Background color for the whole container */
+  color: #fff;
+  padding: 20px;
 }
 
-.team-member {
-    width: 95%;
-    max-width: 400px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s;
-    height: 350px; 
+.contact-card {
+  display: flex;
+  background-color: #191d2b; /* Background color for the entire card */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 450px; /* Increased width of the cards */
+  text-align: left;
 }
 
-.circle-image {
-    width: 100%;
-    background-color: #333;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    overflow: hidden;
-    height: 40%;
+.contact-image {
+  width: 120px;
+  height: 120px;
+  background-color: #191d2b; /* Background color for the circular image container */
+  border-radius: 50%;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-right: 20px;
 }
 
-.circle-image img {
-    object-fit: cover;
-    max-width: 100%; 
-    max-height: 100px; 
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 3px solid #fff;
-    margin: 10px auto;
-}
-.member-details {
-    width: 100%;
-    padding: 20px;
-    flex-grow: 1; 
+.contact-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.member-details h2 {
-  color: #333;
+.contact-details {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: left;
+  background-color: #191d2b; /* Background color for the details container */
 }
 
+.contact-details h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.contact-details p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0 0 20px;
+}
 
 .social-links {
-    margin: 15px 0; 
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-links a {
-    display: inline-block;
-    margin: 0 15px; 
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .social-links img {
-    width: 3.2rem; 
-    border-radius: 50%;
-    background-color: #00b7ff;
-    padding: 5px;
-    transition: transform 0.3s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00b7ff;
+  padding: 5px;
+  transition: transform 0.3s;
 }
 
 .social-links img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.contact-links a {
-    text-decoration: none;
-    color: #00b2f8;
-    font-weight: bold;
-    margin: 10px 0; 
-    display: block;
-    transition: color 0.3s;
-}
+</style>
 
-.contact-links a:hover {
-    color: #1e98c9;
-}
-
-#h-website {
-  padding: 0;
-  width: 4rem;
-}
-</style> -->
