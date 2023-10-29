@@ -10,11 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.10.15",
+    "astro": "^3.4.0",
     "sharp": "^0.32.6"
   },
   "devDependencies": {
     "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.1"
+    "prettier-plugin-astro": "^0.12.1",
+    "sass": "^1.69.5"
   }
 }

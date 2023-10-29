@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
-import Layout from "../layout/Layout.astro";
-import Onepiece from "../images/onepiece.jpg";
 import Naruto from "../images/naruto.jpg";
+import Onepiece from "../images/onepiece.jpg";
+import Layout from "../layout/Layout.astro";
 ---
 
 <Layout title="Welcome To Anime Paradise - Infinite Programmer">
@@ -19,14 +19,14 @@ import Naruto from "../images/naruto.jpg";
     <div class="anime-recommendations" id="anime-recommendations">
       <div class="anime">
         <a href="animereview.html#one-P">
-          <img src={Onepiece} alt="One Piece" />
+          <Image src={Onepiece} alt="One Piece" />
           <h3>One Piece</h3>
           <p style="margin-bottom: 3.4rem;">Hey Let's Read About One Piece!</p>
         </a>
       </div>
       <div class="anime">
         <a href="animereview.html">
-          <img src={Naruto} alt="Naruto" />
+          <Image src={Naruto} alt="Naruto" />
           <h3>Naruto</h3>
           <p>
             Wanna Read About Naruto? You are in the Right Place to Read The

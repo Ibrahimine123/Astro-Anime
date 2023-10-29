@@ -1,23 +1,23 @@
 ---
-import Layout from "../layout/Layout.astro";
-import naruto from "../images/Naruto Profile.jpg";
-import Monkey from "../images/Money D luufy.jpg";
-import Bleach from "../images/kurosaki.jpg";
-import kenKaneki from "../images/ken-kaneki.jpg";
-import jujutsu from "../images/juju.jpg";
-import Eren from "../images/eren yeager.jpg";
-import Demon from "../images/demon slayer.jpg";
-import Yagami from "../images/yagami.jpg";
-import Hang from "../images/hanagaki.jpg";
-import thor from "../images/thorfinn.jpg";
 import { Image } from "astro:assets";
+import Monkey from "../images/Money D luufy.jpg";
+import naruto from "../images/Naruto Profile.jpg";
+import Demon from "../images/demon slayer.jpg";
+import Eren from "../images/eren yeager.jpg";
+import Hang from "../images/hanagaki.jpg";
+import jujutsu from "../images/juju.jpg";
+import kenKaneki from "../images/ken-kaneki.jpg";
+import Bleach from "../images/kurosaki.jpg";
+import thor from "../images/thorfinn.jpg";
+import Yagami from "../images/yagami.jpg";
+import Layout from "../layout/Layout.astro";
 ---
 
 <Layout title="Anime Reviews - Infinite Programmer">
   <section class="anime-review">
     <div class="anime-review-content">
       <h2 style="text-align: center;">Naruto</h2>
-      <img src={naruto} alt="Naruto">
+      <Image src={naruto} alt="Naruto" />
       <p><strong>Genre:</strong> Action, Comedy, Fantasy</p>
       <p><strong>Release Year:</strong> 1999</p>
       <p>
@@ -48,433 +48,441 @@ import { Image } from "astro:assets";
         <span class="stars">★★★★☆</span>
         <span class="score">(4.8/5)</span>
       </div>
-    </div>
-    <div id="one-P" class="anime-review-content">
-      <h2>One piece</h2>
-      <img src={Monkey} alt="Monkey D Luffy">
-      <p><strong>Genre:</strong> Action, Fantasy</p>
-      <p><strong>Release Year:</strong> 1999</p>
-      <p>
-        <strong>Summary:</strong>Netflix's live-action "One Piece" successfully
-        compresses numerous story arcs, with standout performances by Mackenyu,
-        Emily Rudd, and Iñaki Godoy. It captures the essence of the original
-        series, featuring dynamic camerawork and faithful battles, all while
-        Netflix ensures Eiichiro Oda's approval.
-      </p>
-      <h3>Review:</h3>
-      <p>
-        The live-action adaptation of "One Piece" manages to strike a remarkable
-        balance, condensing numerous story arcs into a single season without
-        sacrificing depth. Mackenyu's portrayal of Roronoa Zoro's stoicism and
-        swordplay, along with Emily Rudd's emotive take on Nami, breathe life
-        into the characters. However, it's Iñaki Godoy's exuberant performance
-        in the lead role that truly shines, capturing the essence of Luffy's
-        pirate spirit.
-      </p>
-      <p>
-        What sets this adaptation apart is its ability to capture the
-        Saturday-morning-cartoon vibe of the original series, complete with
-        dynamic camerawork and VFX-filled battles faithful to the manga.
-        Netflix's commitment to ensuring Eiichiro Oda's satisfaction before the
-        show's release is a commendable nod to the source material's creator.
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(3.9/5)</span>
+      <div id="one-P" class="anime-review-content">
+        <h2>One piece</h2>
+        <Image src={Monkey} alt="Monkey D Luffy" />
+        <p><strong>Genre:</strong> Action, Fantasy</p>
+        <p><strong>Release Year:</strong> 1999</p>
+        <p>
+          <strong>Summary:</strong>Netflix's live-action "One Piece"
+          successfully compresses numerous story arcs, with standout
+          performances by Mackenyu, Emily Rudd, and Iñaki Godoy. It captures the
+          essence of the original series, featuring dynamic camerawork and
+          faithful battles, all while Netflix ensures Eiichiro Oda's approval.
+        </p>
+        <h3>Review:</h3>
+        <p>
+          The live-action adaptation of "One Piece" manages to strike a
+          remarkable balance, condensing numerous story arcs into a single
+          season without sacrificing depth. Mackenyu's portrayal of Roronoa
+          Zoro's stoicism and swordplay, along with Emily Rudd's emotive take on
+          Nami, breathe life into the characters. However, it's Iñaki Godoy's
+          exuberant performance in the lead role that truly shines, capturing
+          the essence of Luffy's pirate spirit.
+        </p>
+        <p>
+          What sets this adaptation apart is its ability to capture the
+          Saturday-morning-cartoon vibe of the original series, complete with
+          dynamic camerawork and VFX-filled battles faithful to the manga.
+          Netflix's commitment to ensuring Eiichiro Oda's satisfaction before
+          the show's release is a commendable nod to the source material's
+          creator.
+        </p>
+        <h3>Rating:</h3>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span class="score">(3.9/5)</span>
+        </div>
+        <div class="anime-review-content">
+          <h2>Bleach</h2>
+          <Image src={Bleach} alt="Kurosaki" />
+          <p><strong>Genre:</strong> Action, Fantasy</p>
+          <p><strong>Release Year:</strong> 2004</p>
+          <p>
+            <strong>Summary:</strong>
+             "Bleach" started strong with the intriguing concept of the Soul
+            Society and its Shinigami squads. The focus on Captains and
+            Lieutenants made them the standout characters. However, the
+            excessive number of squads and characters hindered character
+            development and narrative coherence. The inclusion of Hollows added
+            depth, but a more streamlined cast could have improved the series.
+            Despite its potential, "Bleach" fell short due to these issues.
+          </p>
+          <h3>Review:</h3>
+          <p>
+            "Bleach" initially held immense promise, thanks to its captivating
+            concept. The Soul Society and its enigmatic Gotei 13 squads,
+            comprised of Shinigami (Soul Reapers), stood out as the show's
+            strongest elements. The spotlight often falls on the intriguing
+            Captains and Lieutenants of these squads, making them the most
+            compelling characters in the series. However, the show's potential
+            is hindered by its excessive number of squads and characters,
+            resulting in insufficient character development and a somewhat
+            diluted narrative.
+          </p>
+          <p>
+            Furthermore, the presence of Hollows adds depth to the storyline, as
+            these unique entities, once human souls, contribute to the show's
+            overall intrigue. Nonetheless, to enhance character depth and
+            storytelling focus, a more concise cast of squads with fewer members
+            might have served the series better, allowing for more comprehensive
+            character development and exploration of its captivating concepts.
+          </p>
+          <h3>Rating:</h3>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">(4.7/5)</span>
+          </div>
+        </div>
+        <div class="anime-review-content">
+          <h2>Jujutsu Kaisen</h2>
+          <Image src={jujutsu} alt="Jujutsu Kaisen" />
+          <p><strong>Genre:</strong> Dark, Adventure, Fantasy</p>
+          <p><strong>Release Year:</strong> 2020</p>
+          <p>
+            <strong>Summary:</strong> Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nullam vehicula odio ac ullamcorper. Suspendisse
+            potenti. Praesent sed dapibus tortor. Fusce ut tincidunt lorem.
+          </p>
+          <h3>Review:</h3>
+          <p>
+            "Jujutsu Kaisen" is a thrilling and action-packed anime that
+            immediately draws you in with its captivating story and dynamic
+            characters. The series follows Yuji Itadori, an ordinary high school
+            student who becomes entangled in the world of curses and jujutsu
+            sorcerers after a chance encounter with a cursed object. What sets
+            "Jujutsu Kaisen" apart is its unique blend of supernatural elements,
+            intense battles, and a healthy dose of humor..
+          </p>
+          <p>
+            The animation quality is top-notch, with beautifully choreographed
+            fight scenes that keep you on the edge of your seat. The characters
+            are well-developed, each with their own distinct personalities and
+            abilities, making them easy to root for. Additionally, the series
+            delves into deeper themes of life, death, and the consequences of
+            one's choices, adding depth to the overall narrative. "Jujutsu
+            Kaisen" is a must-watch for fans of the supernatural action genre,
+            offering a fresh and exciting take on sorcery and curses.
+          </p>
+          <h3>Rating:</h3>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">(4.8/5)</span>
+          </div>
+        </div>
+        <div class="anime-review-content">
+          <h2>Tokyo Ghoul</h2>
+          <Image src={kenKaneki} alt="Tokyo Ghoul" />
+          <p><strong>Genre:</strong> Dark, Thriller, Fantasy</p>
+          <p><strong>Release Year:</strong> 2015</p>
+          <p>
+            <strong>Summary:</strong>
+             "Tokyo Ghoul" follows Kaneki, who becomes a half-ghoul, navigating
+            moral complexities, identity, and intense action in a visually
+            striking anime that's both captivating and thought-provoking.
+          </p>
+          <h3>Review:</h3>
+          <p>
+            "Tokyo Ghoul" offers a dark and gritty narrative that delves deep
+            into the complexities of morality, identity, and the struggle for
+            survival in a world inhabited by flesh-eating ghouls. The story
+            follows Kaneki, an ordinary college student who undergoes a
+            horrifying transformation into a half-ghoul after a chance encounter
+            with one of these carnivorous creatures. As he grapples with his
+            newfound identity and insatiable hunger for human flesh, Kaneki is
+            thrust into the underground ghoul society, where he must navigate
+            the fragile line between his human past and ghoul nature. The series
+            excels in its exploration of the moral ambiguity surrounding ghouls,
+            blurring the lines between good and evil and challenging viewers to
+            question their preconceived notions of monstrosity.
+          </p>
+          <p>
+            "Tokyo Ghoul" is renowned for its striking visual style and
+            gruesome, action-packed sequences that effectively convey the
+            brutality of the ghoul world. The character development,
+            particularly Kaneki's transformation and inner turmoil, is
+            masterfully executed, adding depth and complexity to the story.
+            While the anime's pacing and adaptation have received mixed reviews,
+            the overall thematic depth and thought-provoking narrative make
+            "Tokyo Ghoul" a compelling and memorable addition to the horror and
+            supernatural anime genres.
+          </p>
+          <h3>Rating:</h3>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">(4.7s/5)</span>
+          </div>
+        </div>
+        <div class="anime-review-content">
+          <h2>Attack on Titan</h2>
+          <Image src={Eren} alt="Eren Yeager" />
+          <p><strong>Genre:</strong> Action, Dark, Fantasy</p>
+          <p><strong>Release Year:</strong> 2014</p>
+          <p>
+            <strong>Summary:</strong>
+             Eren Yeager, a central character in "Attack on Titan," undergoes
+            remarkable growth, transforming from a vengeful youth into a complex
+            figure questioning morality and destiny. His evolution adds depth
+            and intrigue to the series.
+          </p>
+          <h3>Review:</h3>
+          <p>
+            Eren Yeager's character arc in "Attack on Titan" is nothing short of
+            exceptional. He starts as a determined and somewhat reckless
+            protagonist driven by revenge against the Titans that devastated his
+            world. As the series progresses, Eren's character undergoes a
+            profound transformation. His relentless pursuit of freedom evolves
+            into a complex exploration of morality, the consequences of his
+            actions, and the true nature of his world. This development, along
+            with his unwavering resolve, makes Eren one of the most compelling
+            and multi-dimensional characters in modern anime.
+          </p>
+          <p>
+            Eren's journey from vengeance-fueled anger to a nuanced reflection
+            on the harsh realities of war and survival adds layers of depth to
+            "Attack on Titan." His character's evolution parallels the series'
+            overall shift from a straightforward battle against monstrous foes
+            to a narrative that challenges viewers' perceptions of good and
+            evil. Eren Yeager's complex character is undeniably one of the
+            driving forces behind the enduring popularity and critical acclaim
+            of "Attack on Titan."
+          </p>
+          <h3>Rating:</h3>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">(4/5)</span>
+          </div>
+        </div>
+        <div class="anime-review-content">
+          <h2>Demon Slayer</h2>
+          <Image src={Demon} alt="Demon slayer" />
+          <p><strong>Genre:</strong> Action, Fantasy</p>
+          <p><strong>Release Year:</strong> 2019</p>
+          <p>
+            <strong>Summary:</strong> In "Demon Slayer," Tanjiro Kamado, after a
+            demon attack leaves his family devastated, embarks on a quest for
+            vengeance and redemption. He joins the Demon Slayer Corps, where he
+            battles formidable demons while seeking a cure for his sister,
+            Nezuko, who has become one herself. Tanjiro's unwavering resolve and
+            empathy define his heroic journey in a world filled with darkness.
+          </p>
+          <h3>Review:</h3>
+          <p>
+            "Demon Slayer," known for its Japanese title "Kimetsu no Yaiba," has
+            taken the anime world by storm with its gripping narrative and
+            stunning animation. At the heart of the series is Tanjiro Kamado, a
+            character whose unwavering determination and profound empathy
+            instantly connect with viewers. His journey from a devastated
+            brother seeking vengeance for his family's brutal slaughter to a
+            valiant member of the Demon Slayer Corps is a testament to his
+            enduring spirit and moral strength.
+          </p>
+          <p>
+            What truly sets "Demon Slayer" apart is its emotionally charged
+            storytelling. Beyond the action-packed fights, the series delves
+            deep into the emotional lives of its characters. Tanjiro's bond with
+            his demon-turned sister, Nezuko, is a central theme, highlighting
+            themes of family, sacrifice, and resilience. The tragic backstories
+            of various demons humanize them, creating a complex moral landscape
+            that challenges viewers' perceptions.
+          </p>
+          <h3>Rating:</h3>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">(4.6/5)</span>
+          </div>
+        </div>
+        <div class="anime-review-content">
+          <h2>Death Note</h2>
+          <Image src={Yagami} alt="yamagi" />
+          <p><strong>Genre:</strong> Thriller</p>
+          <p><strong>Release Year:</strong> 2006</p>
+          <p>
+            <strong>Summary:</strong>
+             "Death Note" is a gripping psychological thriller centred on Light
+            Yagami's descent into megalomania when he gains the power to kill
+            with a mysterious notebook, challenging morality and justice.
+          </p>
+          <h3>Review:</h3>
+          <p>
+            "Death Note" is a psychological thriller that keeps viewers on the
+            edge of their seats. The story revolves around Light Yagami, a high
+            school student who discovers a mysterious notebook that allows him
+            to kill anyone whose name he writes in it. This power quickly
+            corrupts Light, turning him into a megalomaniac with a god complex
+            as he sets out to rid the world of criminals. The cat-and-mouse game
+            between Light and the enigmatic detective L is the driving force of
+            the series, creating a suspenseful and intellectually stimulating
+            narrative. The moral and ethical dilemmas explored in "Death Note"
+            make it a thought-provoking masterpiece that challenges viewers'
+            notions of justice, morality, and the consequences of absolute
+            power.
+          </p>
+          <p>
+            In this riveting battle of wits, "Death Note" excels in both
+            storytelling and character development. Light Yagami's descent into
+            darkness is a captivating character study, while L's genius-level
+            intellect and unorthodox methods add depth to the narrative. The
+            series is a gripping exploration of the fine line between good and
+            evil, raising questions about the nature of justice and the
+            corrupting influence of power. With its intricate plot, complex
+            characters, and moral quandaries, "Death Note" remains a standout in
+            the realm of anime, leaving a lasting impact on its audience..
+          </p>
+          <h3>Rating:</h3>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">(4.9/5)</span>
+          </div>
+        </div>
+        <div class="anime-review-content">
+          <h2>Tokyo Revengers</h2>
+          <Image src={Hang} alt="Tokyo Revengers" />
+          <p><strong>Genre:</strong> Action, Adventure</p>
+          <p><strong>Release Year:</strong> 2021</p>
+          <p>
+            <strong>Summary:</strong> Tokyo Revengers Review By Best Anime
+            Script Writer
+          </p>
+          <h3>Review:</h3>
+          <p>
+            "Tokyo Revengers" delivers a thrilling and emotional rollercoaster
+            ride from start to finish. The series follows Takemichi Hanagaki, a
+            seemingly average guy who discovers he can time-travel to his
+            teenage years and attempts to prevent a tragic future for his
+            friends. This premise sets the stage for a gripping narrative filled
+            with intense gang conflicts, intricate character relationships, and
+            high-stakes time-travel dilemmas.
+          </p>
+          <p>
+            What sets "Tokyo Revengers" apart is its ability to balance intense
+            action with deep character development. The audience becomes
+            emotionally invested in Takemichi's journey as he grapples with his
+            past and confronts the challenges of changing destiny. The intricate
+            plot keeps viewers guessing, and the series doesn't shy away from
+            exploring the consequences of time manipulation. With its
+            well-crafted storytelling and relatable characters, "Tokyo
+            Revengers" has earned its place as a standout in the world of anime,
+            offering a unique blend of action, drama, and time-travel intrigue.
+          </p>
+          <h3>Rating:</h3>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">(4.8/5)</span>
+          </div>
+        </div>
+        <div class="anime-review-content">
+          <h2>Vinland Saga</h2>
+          <Image src={thor} alt="Vinland Saga" />
+          <p><strong>Genre:</strong> Action, Adventure</p>
+          <p><strong>Release Year:</strong> 2022</p>
+          <p>
+            <strong>Summary:</strong> "Vinland Saga" is a meticulously crafted
+            Viking epic filled with action, moral dilemmas, and complex
+            characters. It's a must-watch for historical drama enthusiasts.
+          </p>
+          <h3>Review:</h3>
+          <p>
+            "Vinland Saga" is a historical epic that takes viewers on a
+            captivating journey through the Viking Age. The series follows
+            Thorfinn, a young warrior seeking vengeance against the man who
+            killed his father. Set against the backdrop of Viking conquests,
+            political intrigue, and personal growth, "Vinland Saga" explores
+            themes of honor, morality, and the cost of pursuing one's vendetta.
+          </p>
+          <p>
+            What makes "Vinland Saga" exceptional is its meticulous attention to
+            historical accuracy and character development. The animation is
+            top-notch, bringing the brutal battles and stunning landscapes of
+            the Viking world to life. Moreover, the characters are richly
+            layered, each facing their own moral dilemmas and transformations.
+            As Thorfinn's quest for revenge gradually evolves into a search for
+            a more peaceful existence, the series delves into the complexities
+            of human nature and the consequences of violence. With its
+            compelling narrative and complex characters, "Vinland Saga" stands
+            as a must-watch for fans of historical drama and action-packed
+            storytelling.
+          </p>
+          <h3>Rating:</h3>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">(4.9/5)</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="anime-review-content">
-      <h2>Bleach</h2>
-      <img src={Bleach} alt="Kurosaki" />
-      <p><strong>Genre:</strong> Action, Fantasy</p>
-      <p><strong>Release Year:</strong> 2004</p>
-      <p>
-        <strong>Summary:</strong>
-         "Bleach" started strong with the intriguing concept of the Soul Society
-        and its Shinigami squads. The focus on Captains and Lieutenants made
-        them the standout characters. However, the excessive number of squads
-        and characters hindered character development and narrative coherence.
-        The inclusion of Hollows added depth, but a more streamlined cast could
-        have improved the series. Despite its potential, "Bleach" fell short due
-        to these issues.
-      </p>
-      <h3>Review:</h3>
-      <p>
-        "Bleach" initially held immense promise, thanks to its captivating
-        concept. The Soul Society and its enigmatic Gotei 13 squads, comprised
-        of Shinigami (Soul Reapers), stood out as the show's strongest elements.
-        The spotlight often falls on the intriguing Captains and Lieutenants of
-        these squads, making them the most compelling characters in the series.
-        However, the show's potential is hindered by its excessive number of
-        squads and characters, resulting in insufficient character development
-        and a somewhat diluted narrative.
-      </p>
-      <p>
-        Furthermore, the presence of Hollows adds depth to the storyline, as
-        these unique entities, once human souls, contribute to the show's
-        overall intrigue. Nonetheless, to enhance character depth and
-        storytelling focus, a more concise cast of squads with fewer members
-        might have served the series better, allowing for more comprehensive
-        character development and exploration of its captivating concepts.
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(4.7/5)</span>
-      </div>
-    </div>
-    <div class="anime-review-content">
-      <h2>Jujutsu Kaisen</h2>
-      <img src={jujutsu} alt="Jujutsu Kaisen" />
-      <p><strong>Genre:</strong> Dark, Adventure, Fantasy</p>
-      <p><strong>Release Year:</strong> 2020</p>
-      <p>
-        <strong>Summary:</strong> Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nullam vehicula odio ac ullamcorper. Suspendisse
-        potenti. Praesent sed dapibus tortor. Fusce ut tincidunt lorem.
-      </p>
-      <h3>Review:</h3>
-      <p>
-        "Jujutsu Kaisen" is a thrilling and action-packed anime that immediately
-        draws you in with its captivating story and dynamic characters. The
-        series follows Yuji Itadori, an ordinary high school student who becomes
-        entangled in the world of curses and jujutsu sorcerers after a chance
-        encounter with a cursed object. What sets "Jujutsu Kaisen" apart is its
-        unique blend of supernatural elements, intense battles, and a healthy
-        dose of humor..
-      </p>
-      <p>
-        The animation quality is top-notch, with beautifully choreographed fight
-        scenes that keep you on the edge of your seat. The characters are
-        well-developed, each with their own distinct personalities and
-        abilities, making them easy to root for. Additionally, the series delves
-        into deeper themes of life, death, and the consequences of one's
-        choices, adding depth to the overall narrative. "Jujutsu Kaisen" is a
-        must-watch for fans of the supernatural action genre, offering a fresh
-        and exciting take on sorcery and curses.
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(4.8/5)</span>
-      </div>
-    </div>
-    <div class="anime-review-content">
-      <h2>Tokyo Ghoul</h2>
-      <img src={kenKaneki} alt="Tokyo Ghoul" />
-      <p><strong>Genre:</strong> Dark, Thriller, Fantasy</p>
-      <p><strong>Release Year:</strong> 2015</p>
-      <p>
-        <strong>Summary:</strong>
-         "Tokyo Ghoul" follows Kaneki, who becomes a half-ghoul, navigating
-        moral complexities, identity, and intense action in a visually striking
-        anime that's both captivating and thought-provoking.
-      </p>
-      <h3>Review:</h3>
-      <p>
-        "Tokyo Ghoul" offers a dark and gritty narrative that delves deep into
-        the complexities of morality, identity, and the struggle for survival in
-        a world inhabited by flesh-eating ghouls. The story follows Kaneki, an
-        ordinary college student who undergoes a horrifying transformation into
-        a half-ghoul after a chance encounter with one of these carnivorous
-        creatures. As he grapples with his newfound identity and insatiable
-        hunger for human flesh, Kaneki is thrust into the underground ghoul
-        society, where he must navigate the fragile line between his human past
-        and ghoul nature. The series excels in its exploration of the moral
-        ambiguity surrounding ghouls, blurring the lines between good and evil
-        and challenging viewers to question their preconceived notions of
-        monstrosity.
-      </p>
-      <p>
-        "Tokyo Ghoul" is renowned for its striking visual style and gruesome,
-        action-packed sequences that effectively convey the brutality of the
-        ghoul world. The character development, particularly Kaneki's
-        transformation and inner turmoil, is masterfully executed, adding depth
-        and complexity to the story. While the anime's pacing and adaptation
-        have received mixed reviews, the overall thematic depth and
-        thought-provoking narrative make "Tokyo Ghoul" a compelling and
-        memorable addition to the horror and supernatural anime genres.
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(4.7s/5)</span>
-      </div>
-    </div>
-    <div class="anime-review-content">
-      <h2>Attack on Titan</h2>
-      <img src={Eren} alt="Eren Yeager" />
-      <p><strong>Genre:</strong> Action, Dark, Fantasy</p>
-      <p><strong>Release Year:</strong> 2014</p>
-      <p>
-        <strong>Summary:</strong>
-         Eren Yeager, a central character in "Attack on Titan," undergoes
-        remarkable growth, transforming from a vengeful youth into a complex
-        figure questioning morality and destiny. His evolution adds depth and
-        intrigue to the series.
-      </p>
-      <h3>Review:</h3>
-      <p>
-        Eren Yeager's character arc in "Attack on Titan" is nothing short of
-        exceptional. He starts as a determined and somewhat reckless protagonist
-        driven by revenge against the Titans that devastated his world. As the
-        series progresses, Eren's character undergoes a profound transformation.
-        His relentless pursuit of freedom evolves into a complex exploration of
-        morality, the consequences of his actions, and the true nature of his
-        world. This development, along with his unwavering resolve, makes Eren
-        one of the most compelling and multi-dimensional characters in modern
-        anime.
-      </p>
-      <p>
-        Eren's journey from vengeance-fueled anger to a nuanced reflection on
-        the harsh realities of war and survival adds layers of depth to "Attack
-        on Titan." His character's evolution parallels the series' overall shift
-        from a straightforward battle against monstrous foes to a narrative that
-        challenges viewers' perceptions of good and evil. Eren Yeager's complex
-        character is undeniably one of the driving forces behind the enduring
-        popularity and critical acclaim of "Attack on Titan."
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(4/5)</span>
-      </div>
-    </div>
-    <div class="anime-review-content">
-      <h2>Demon Slayer</h2>
-      <img src={Demon} alt="Demon slayer" />
-      <p><strong>Genre:</strong> Action, Fantasy</p>
-      <p><strong>Release Year:</strong> 2019</p>
-      <p>
-        <strong>Summary:</strong> In "Demon Slayer," Tanjiro Kamado, after a
-        demon attack leaves his family devastated, embarks on a quest for
-        vengeance and redemption. He joins the Demon Slayer Corps, where he
-        battles formidable demons while seeking a cure for his sister, Nezuko,
-        who has become one herself. Tanjiro's unwavering resolve and empathy
-        define his heroic journey in a world filled with darkness.
-      </p>
-      <h3>Review:</h3>
-      <p>
-        "Demon Slayer," known for its Japanese title "Kimetsu no Yaiba," has
-        taken the anime world by storm with its gripping narrative and stunning
-        animation. At the heart of the series is Tanjiro Kamado, a character
-        whose unwavering determination and profound empathy instantly connect
-        with viewers. His journey from a devastated brother seeking vengeance
-        for his family's brutal slaughter to a valiant member of the Demon
-        Slayer Corps is a testament to his enduring spirit and moral strength.
-      </p>
-      <p>
-        What truly sets "Demon Slayer" apart is its emotionally charged
-        storytelling. Beyond the action-packed fights, the series delves deep
-        into the emotional lives of its characters. Tanjiro's bond with his
-        demon-turned sister, Nezuko, is a central theme, highlighting themes of
-        family, sacrifice, and resilience. The tragic backstories of various
-        demons humanize them, creating a complex moral landscape that challenges
-        viewers' perceptions.
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(4.6/5)</span>
-      </div>
-    </div>
-    <div class="anime-review-content">
-      <h2>Death Note</h2>
-      <img src={Yagami} alt="yamagi" />
-      <p><strong>Genre:</strong> Thriller</p>
-      <p><strong>Release Year:</strong> 2006</p>
-      <p>
-        <strong>Summary:</strong>
-         "Death Note" is a gripping psychological thriller centred on Light
-        Yagami's descent into megalomania when he gains the power to kill with a
-        mysterious notebook, challenging morality and justice.
-      </p>
-      <h3>Review:</h3>
-      <p>
-        "Death Note" is a psychological thriller that keeps viewers on the edge
-        of their seats. The story revolves around Light Yagami, a high school
-        student who discovers a mysterious notebook that allows him to kill
-        anyone whose name he writes in it. This power quickly corrupts Light,
-        turning him into a megalomaniac with a god complex as he sets out to rid
-        the world of criminals. The cat-and-mouse game between Light and the
-        enigmatic detective L is the driving force of the series, creating a
-        suspenseful and intellectually stimulating narrative. The moral and
-        ethical dilemmas explored in "Death Note" make it a thought-provoking
-        masterpiece that challenges viewers' notions of justice, morality, and
-        the consequences of absolute power.
-      </p>
-      <p>
-        In this riveting battle of wits, "Death Note" excels in both
-        storytelling and character development. Light Yagami's descent into
-        darkness is a captivating character study, while L's genius-level
-        intellect and unorthodox methods add depth to the narrative. The series
-        is a gripping exploration of the fine line between good and evil,
-        raising questions about the nature of justice and the corrupting
-        influence of power. With its intricate plot, complex characters, and
-        moral quandaries, "Death Note" remains a standout in the realm of anime,
-        leaving a lasting impact on its audience..
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(4.9/5)</span>
-      </div>
-    </div>
-    <div class="anime-review-content">
-      <h2>Tokyo Revengers</h2>
-      <img src={Hang} alt="Tokyo Revengers" />
-      <p><strong>Genre:</strong> Action, Adventure</p>
-      <p><strong>Release Year:</strong> 2021</p>
-      <p>
-        <strong>Summary:</strong> Tokyo Revengers Review By Best Anime Script
-        Writer
-      </p>
-      <h3>Review:</h3>
-      <p>
-        "Tokyo Revengers" delivers a thrilling and emotional rollercoaster ride
-        from start to finish. The series follows Takemichi Hanagaki, a seemingly
-        average guy who discovers he can time-travel to his teenage years and
-        attempts to prevent a tragic future for his friends. This premise sets
-        the stage for a gripping narrative filled with intense gang conflicts,
-        intricate character relationships, and high-stakes time-travel dilemmas.
-      </p>
-      <p>
-        What sets "Tokyo Revengers" apart is its ability to balance intense
-        action with deep character development. The audience becomes emotionally
-        invested in Takemichi's journey as he grapples with his past and
-        confronts the challenges of changing destiny. The intricate plot keeps
-        viewers guessing, and the series doesn't shy away from exploring the
-        consequences of time manipulation. With its well-crafted storytelling
-        and relatable characters, "Tokyo Revengers" has earned its place as a
-        standout in the world of anime, offering a unique blend of action,
-        drama, and time-travel intrigue.
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(4.8/5)</span>
-      </div>
-    </div>
-    <div class="anime-review-content">
-      <h2>Vinland Saga</h2>
-      <img src={thor} alt="Vinland Saga" />
-      <p><strong>Genre:</strong> Action, Adventure</p>
-      <p><strong>Release Year:</strong> 2022</p>
-      <p>
-        <strong>Summary:</strong> "Vinland Saga" is a meticulously crafted
-        Viking epic filled with action, moral dilemmas, and complex characters.
-        It's a must-watch for historical drama enthusiasts.
-      </p>
-      <h3>Review:</h3>
-      <p>
-        "Vinland Saga" is a historical epic that takes viewers on a captivating
-        journey through the Viking Age. The series follows Thorfinn, a young
-        warrior seeking vengeance against the man who killed his father. Set
-        against the backdrop of Viking conquests, political intrigue, and
-        personal growth, "Vinland Saga" explores themes of honor, morality, and
-        the cost of pursuing one's vendetta.
-      </p>
-      <p>
-        What makes "Vinland Saga" exceptional is its meticulous attention to
-        historical accuracy and character development. The animation is
-        top-notch, bringing the brutal battles and stunning landscapes of the
-        Viking world to life. Moreover, the characters are richly layered, each
-        facing their own moral dilemmas and transformations. As Thorfinn's quest
-        for revenge gradually evolves into a search for a more peaceful
-        existence, the series delves into the complexities of human nature and
-        the consequences of violence. With its compelling narrative and complex
-        characters, "Vinland Saga" stands as a must-watch for fans of historical
-        drama and action-packed storytelling.
-      </p>
-      <h3>Rating:</h3>
-      <div class="rating">
-        <span class="stars">★★★★☆</span>
-        <span class="score">(4.9/5)</span>
-      </div>
-    </div>
+
+    <style>
+      .anime-review-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #333;
+        border: 1px solid #000;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .anime-review-content h2 {
+        font-size: 24px;
+        color: #00b2f8;
+      }
+
+      .anime-review-content img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 1px;
+        transition: transform 0.3s;
+      }
+
+      .anime-review-content img:hover {
+        transform: scale(1.05);
+      }
+
+      .anime-review-content p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+        color: #fff;
+        margin-top: 7px;
+      }
+
+      .anime-review-content h3 {
+        font-size: 20px;
+        margin-top: 10px;
+        color: #00b2f8;
+      }
+
+      .rating {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
+      }
+
+      .stars {
+        color: #ffcc00;
+      }
+
+      .score {
+        color: #000;
+        font-weight: bold;
+      }
+      @media (max-width: 768px) {
+        .anime-review-content img {
+          width: 150px;
+          height: 150px;
+        }
+
+        .anime-review-content h2 {
+          font-size: 20px;
+        }
+
+        .anime-review-content h3 {
+          font-size: 18px;
+        }
+
+        .rating {
+          font-size: 20px;
+        }
+      }
+    </style>
   </section>
 </Layout>
-
-<style>
-  .anime-review-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #333;
-    border: 1px solid #000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .anime-review-content h2 {
-    font-size: 24px;
-    color: #00b2f8;
-  }
-
-  .anime-review-content img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 1px;
-    transition: transform 0.3s;
-  }
-
-  .anime-review-content img:hover {
-    transform: scale(1.05);
-  }
-
-  .anime-review-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-    color: #fff;
-    margin-top: 7px;
-  }
-
-  .anime-review-content h3 {
-    font-size: 20px;
-    margin-top: 10px;
-    color: #00b2f8;
-  }
-
-  .rating {
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -10px;
-  }
-
-  .stars {
-    color: #ffcc00;
-  }
-
-  .score {
-    color: #000;
-    font-weight: bold;
-  }
-  @media (max-width: 768px) {
-    .anime-review-content img {
-      width: 150px;
-      height: 150px;
-    }
-
-    .anime-review-content h2 {
-      font-size: 20px;
-    }
-
-    .anime-review-content h3 {
-      font-size: 18px;
-    }
-
-    .rating {
-      font-size: 20px;
-    }
-  }
-</style>
