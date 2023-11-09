@@ -8,15 +8,17 @@ import codeIcon from "../images/icon-code.jpg";
 import instagram from "../images/instagram-icon.jpg";
 import letterH from "../images/letter-H.png";
 import twitter from "../images/twitter.png";
+import shazim from "../images/shazim.jpg"
 import Layout from "../layout/Layout.astro";
 ---
 
 <Layout title="Contact Anime Paradise Members">
   <h1 class="heading">Team Members</h1>
+  <h2 class="heading">Owner</h2>
   <div class="contact-container">
-    <div class="contact-card">
+    <div class="contact-card owner">
       <div class="contact-image">
-        <Image src={ibrahim} alt="Profile Image" />
+        <Image src={ibrahim} alt="Owner Image" />
       </div>
       <div class="contact-details">
         <h2>Infinite Programmer</h2>
@@ -25,10 +27,7 @@ import Layout from "../layout/Layout.astro";
           <a href="https://ibrahim-amv.pages.dev" target="_blank">
             <Image src={codeIcon} alt="Ibrahim's Website" />
           </a>
-          <a
-            href="https://discordapp.com/users/infinite_programmer"
-            target="_blank"
-          >
+          <a href="https://discordapp.com/users/infinite_programmer" target="_blank">
             <Image src={discord} alt="Infinite Programmer's Discord" />
           </a>
           <a
@@ -40,23 +39,44 @@ import Layout from "../layout/Layout.astro";
         </div>
       </div>
     </div>
-    <div class="contact-card">
-      <div class="contact-image">
-        <Image src={hamza} alt="Profile Image" />
+    <h2 class="heading">Contributors</h2>
+    <div class="contributors">
+      <div class="contact-card">
+        <div class="contact-image">
+          <Image src={hamza} alt="Hamza Rashid" />
+        </div>
+        <div class="contact-details">
+          <h2>Hamza Rashid</h2>
+          <p>Frontend Web Developer</p>
+          <div class="social-links">
+            <a href="https://hamza127.netlify.app" target="_blank">
+              <Image src={letterH} alt="Hamza's Website" />
+            </a>
+            <a href="https://x.com/Hamza_Rash1d" target="_blank">
+              <Image src={twitter} alt="Twitter" />
+            </a>
+            <a href="https://github.com/hamza12700" target="_blank">
+              <Image src={github} alt="GitHub" />
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="contact-details">
-        <h2>Hamza Rashid</h2>
-        <p>Frontend Web Developer</p>
-        <div class="social-links">
-          <a href="https://hamza127.netlify.app/" target="_blank">
-            <Image src={letterH} alt="Hamza's Website" />
-          </a>
-          <a href="https://x.com/Hamza_Rash1d" target="_blank">
-            <Image src={twitter} alt="Twitter" />
-          </a>
-          <a href="https://github.com/hamza12700" target="_blank">
-            <Image src={github} alt="GitHub" />
-          </a>
+
+      <div class="contact-card">
+        <div class="contact-image">
+          <Image src={shazim} alt="Hamza Rashid" />
+        </div>
+        <div class="contact-details">
+          <h2>Shazim Khot</h2> 
+          <p>Contributor</p>
+          <div class="social-links">
+            <a
+            href="https://www.instagram.com/shazim._17/"
+            target="_blank"
+          >
+            <Image src={instagram} alt="Instagram" />
+          </a> 
+          </div>
         </div>
       </div>
     </div>
@@ -66,26 +86,24 @@ import Layout from "../layout/Layout.astro";
 <style lang="scss">
   .contact-container {
     display: flex;
-    justify-content: space-between;
-    color: #fff;
-    padding: 20px;
-    margin: 0 auto 0 auto;
-    gap: 7rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; 
   }
 
   .heading {
-    text-align: center;
-    margin: 3rem 0 3rem 0;
-  }
+  text-align: center;
+  margin: 3rem 0 0.2rem 0;
+}
 
   .contact-card {
     display: flex;
     align-items: center;
-    background-color: #191d2b; /* Background color for the entire card */
+    background-color: #191d2b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     overflow: hidden;
-    max-width: 450px; /* Increased width of the cards */
+    max-width: 450px;
     text-align: left;
 
     img {
@@ -106,7 +124,7 @@ import Layout from "../layout/Layout.astro";
     flex-grow: 1;
     padding: 20px;
     text-align: left;
-    background-color: #191d2b; /* Background color for the details container */
+    background-color: #191d2b;
     h2 {
       font-size: 24px;
       margin: 0;
@@ -136,23 +154,10 @@ import Layout from "../layout/Layout.astro";
       }
     }
   }
-
-  .contact-links {
-    a {
-      text-decoration: none;
-      color: #00b2f8;
-      font-weight: bold;
-      margin: 10px 0;
-      display: block;
-      transition: color 0.3s;
-      &:hover {
-        color: #1e98c9;
-      }
-    }
-  }
-
-  #h-website {
-    padding: 0;
-    width: 4rem;
+  .contributors {
+    display: flex;
+    align-items: center;
+    gap: 3rem; 
+    padding-bottom: 50px;
   }
 </style>
