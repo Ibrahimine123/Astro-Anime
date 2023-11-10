@@ -26,7 +26,7 @@ import Footer from "../components/Footer.astro";
   <Footer />
 </body>
 
-<style is:global>
+<style lang="scss" is:global>
   :root {
     --primary-bg-color: #121212; /* Dark background color */
     --primary-text-color: #fff; /* Text color */
@@ -112,9 +112,14 @@ import Footer from "../components/Footer.astro";
     padding: 10px;
     font-size: 15px;
     display: flex;
+		gap: 0.5rem;
     align-items: center;
     justify-content: center;
     height: 8vh;
+
+		a {
+			color: rgb(100 149 237);
+		}
   }
 
   footer span {
@@ -123,9 +128,6 @@ import Footer from "../components/Footer.astro";
     transition: color 0.3s;
   }
 
-  footer span:hover {
-    color: var(--footer-hover-color);
-  }
   @media (max-width: 768px) {
     nav ul {
       flex-direction: column;
