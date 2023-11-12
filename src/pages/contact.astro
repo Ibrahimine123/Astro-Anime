@@ -160,4 +160,36 @@ import Layout from "../layout/Layout.astro";
     gap: 3rem; 
     padding-bottom: 50px;
   }
+  @media screen and (max-width: 768px) {
+  .contact-container {
+    gap: 1rem; 
+  }
+  .contact-card {
+    max-width: 100%;
+  }
+  .contact-image {
+    width: 80px;
+    height: 80px;
+  }
+  .contact-details {
+    padding: 10px;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+}
+  .social-links {
+    img {
+      width: 30px;
+      height: 30px;
+      padding: 3px;
+    }
+  }
+  .contributors {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 </style>

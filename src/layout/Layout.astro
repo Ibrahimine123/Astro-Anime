@@ -109,25 +109,34 @@ import Footer from "../components/Footer.astro";
     margin-top: auto;
     background-color: var(--footer-bg-color);
     color: var(--footer-text-color);
-    padding: 10px;
-    font-size: 15px;
+    padding: 20px;
     display: flex;
-		gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    height: 8vh;
-
-		a {
-			color: rgb(100 149 237);
-		}
+    font-size: 15px;
   }
 
-  footer span {
-    color: var(--footer-text-color);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
 
+    .designed-text,
+    .privacy-link,
+    .copyright-text {
+      transition: color 0.3s;
+    }
+    .privacy-link {
+  text-decoration: none;
+  color: rgb(100, 149, 237);
+  transition: color 0.3s;
+
+  &:hover {
+    color: rgb(65, 105, 225);
+  }
+}
   @media (max-width: 768px) {
     nav ul {
       flex-direction: column;
