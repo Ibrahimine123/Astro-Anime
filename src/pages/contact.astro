@@ -14,7 +14,7 @@ import Layout from "../layout/Layout.astro";
 
 <Layout title="Contact Anime Paradise Members">
   <h1 class="heading">Team Members</h1>
-  <h2 class="heading">Owner</h2>
+  <h2 class="heading" style="margin-bottom: 20px;">Owner</h2>
   <div class="contact-container">
     <div class="contact-card owner">
       <div class="contact-image">
@@ -84,18 +84,20 @@ import Layout from "../layout/Layout.astro";
 </Layout>
 
 <style lang="scss">
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem; 
-  }
-
   .heading {
   text-align: center;
   margin: 3rem 0 0.2rem 0;
 }
-
+.heading {
+  text-align: center;
+  margin: 1.5rem 0 0.2rem 0; 
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
   .contact-card {
     display: flex;
     align-items: center;
@@ -105,6 +107,7 @@ import Layout from "../layout/Layout.astro";
     overflow: hidden;
     max-width: 450px;
     text-align: left;
+    margin-bottom: 0.6rem;
 
     img {
       border-radius: 100%;
@@ -113,13 +116,11 @@ import Layout from "../layout/Layout.astro";
       height: 100%;
     }
   }
-
   .contact-image {
     width: 120px;
     height: 120px;
     padding-left: 1rem;
   }
-
   .contact-details {
     flex-grow: 1;
     padding: 20px;
@@ -135,7 +136,6 @@ import Layout from "../layout/Layout.astro";
       margin: 0 0 20px;
     }
   }
-
   .social-links {
     display: flex;
     justify-content: space-between;
