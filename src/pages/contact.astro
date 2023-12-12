@@ -8,7 +8,7 @@ import codeIcon from "../images/icon-code.jpg";
 import instagram from "../images/instagram-icon.jpg";
 import letterH from "../images/letter-H.png";
 import twitter from "../images/twitter.png";
-import shazim from "../images/shazim.jpg"
+import shazim from "../images/shazim.jpg";
 import Layout from "../layout/Layout.astro";
 ---
 
@@ -27,7 +27,10 @@ import Layout from "../layout/Layout.astro";
           <a href="https://ibrahim-amv.pages.dev" target="_blank">
             <Image src={codeIcon} alt="Ibrahim's Website" />
           </a>
-          <a href="https://discordapp.com/users/infinite_programmer" target="_blank">
+          <a
+            href="https://discordapp.com/users/infinite_programmer"
+            target="_blank"
+          >
             <Image src={discord} alt="Infinite Programmer's Discord" />
           </a>
           <a
@@ -49,7 +52,7 @@ import Layout from "../layout/Layout.astro";
           <h2>Hamza Rashid</h2>
           <p>Frontend Web Developer</p>
           <div class="social-links">
-            <a href="https://hamza127.netlify.app" target="_blank">
+            <a href="https://hamza127.vercel.app" target="_blank">
               <Image src={letterH} alt="Hamza's Website" />
             </a>
             <a href="https://x.com/Hamza_Rash1d" target="_blank">
@@ -67,15 +70,12 @@ import Layout from "../layout/Layout.astro";
           <Image src={shazim} alt="Hamza Rashid" />
         </div>
         <div class="contact-details">
-          <h2>Shazim Khot</h2> 
+          <h2>Shazim Khot</h2>
           <p>Contributor</p>
           <div class="social-links">
-            <a
-            href="https://www.instagram.com/shazim._17/"
-            target="_blank"
-          >
-            <Image src={instagram} alt="Instagram" />
-          </a> 
+            <a href="https://www.instagram.com/shazim._17/" target="_blank">
+              <Image src={instagram} alt="Instagram" />
+            </a>
           </div>
         </div>
       </div>
@@ -85,19 +85,19 @@ import Layout from "../layout/Layout.astro";
 
 <style lang="scss">
   .heading {
-  text-align: center;
-  margin: 3rem 0 0.2rem 0;
-}
-.heading {
-  text-align: center;
-  margin: 1.5rem 0 0.2rem 0; 
-}
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
+    text-align: center;
+    margin: 3rem 0 0.2rem 0;
+  }
+  .heading {
+    text-align: center;
+    margin: 1.5rem 0 0.2rem 0;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
   .contact-card {
     display: flex;
     align-items: center;
@@ -157,39 +157,39 @@ import Layout from "../layout/Layout.astro";
   .contributors {
     display: flex;
     align-items: center;
-    gap: 3rem; 
+    gap: 3rem;
     padding-bottom: 50px;
   }
   @media screen and (max-width: 768px) {
-  .contact-container {
-    gap: 1rem; 
-  }
-  .contact-card {
-    max-width: 100%;
-  }
-  .contact-image {
-    width: 80px;
-    height: 80px;
-  }
-  .contact-details {
-    padding: 10px;
-    h2 {
-      font-size: 20px;
+    .contact-container {
+      gap: 1rem;
     }
-    p {
-      font-size: 14px;
+    .contact-card {
+      max-width: 100%;
     }
-}
-  .social-links {
-    img {
-      width: 30px;
-      height: 30px;
-      padding: 3px;
+    .contact-image {
+      width: 80px;
+      height: 80px;
+    }
+    .contact-details {
+      padding: 10px;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .social-links {
+      img {
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+      }
+    }
+    .contributors {
+      flex-direction: column;
+      gap: 2rem;
     }
   }
-  .contributors {
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
 </style>
