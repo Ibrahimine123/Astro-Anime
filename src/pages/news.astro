@@ -77,7 +77,7 @@ import naruto from "../images/naruto.jpg";
   </section>
 </Layout>
 
-<script>
+<script lang="ts">
   document.addEventListener("DOMContentLoaded", function () {
     const readMoreParagraphs = document.querySelectorAll(
       ".read-more-paragraph",
@@ -91,12 +91,11 @@ import naruto from "../images/naruto.jpg";
           if (moreContent) {
             if (newsItem.classList.contains("open")) {
               newsItem.classList.remove("open");
-              (moreContent as HTMLElement).style.maxHeight = "0";
+              moreContent.style.maxHeight = "0";
               paragraph.textContent = "Read More...";
             } else {
               newsItem.classList.add("open");
-              (moreContent as HTMLElement).style.maxHeight =
-                (moreContent as HTMLElement).scrollHeight + "px";
+              moreContent.style.maxHeight = moreContent.scrollHeight + "px";
               paragraph.textContent = "Read Less";
             }
           }
