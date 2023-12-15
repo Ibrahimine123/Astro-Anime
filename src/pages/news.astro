@@ -78,29 +78,25 @@ import naruto from "../images/naruto.jpg";
 </Layout>
 
 <script lang="ts">
-  document.addEventListener("DOMContentLoaded", function () {
-    const readMoreParagraphs = document.querySelectorAll(
-      ".read-more-paragraph",
-    );
+  const readMoreParagraphs = document.querySelectorAll(".read-more-paragraph");
 
-    readMoreParagraphs.forEach(function (paragraph) {
-      paragraph.addEventListener("click", function () {
-        const newsItem = paragraph.closest(".news-item");
-        if (newsItem) {
-          const moreContent = newsItem.querySelector(".more-content");
-          if (moreContent) {
-            if (newsItem.classList.contains("open")) {
-              newsItem.classList.remove("open");
-              moreContent.style.maxHeight = "0";
-              paragraph.textContent = "Read More...";
-            } else {
-              newsItem.classList.add("open");
-              moreContent.style.maxHeight = moreContent.scrollHeight + "px";
-              paragraph.textContent = "Read Less";
-            }
+  readMoreParagraphs.forEach(function (paragraph) {
+    paragraph.addEventListener("click", function () {
+      const newsItem = paragraph.closest(".news-item");
+      if (newsItem) {
+        const moreContent = newsItem.querySelector(".more-content");
+        if (moreContent) {
+          if (newsItem.classList.contains("open")) {
+            newsItem.classList.remove("open");
+            moreContent.style.maxHeight = "0";
+            paragraph.textContent = "Read More...";
+          } else {
+            newsItem.classList.add("open");
+            moreContent.style.maxHeight = moreContent.scrollHeight + "px";
+            paragraph.textContent = "Read Less";
           }
         }
-      });
+      }
     });
   });
 </script>
